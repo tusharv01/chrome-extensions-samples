@@ -3,7 +3,8 @@
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+  "service_worker": "service_worker.js",
+  "type": "module"
   },
   "action": {
     "default_title": "Default Title",
@@ -21,4 +22,10 @@
     "128": "icons/128.png",
     "512": "icons/512.png"
   }
+  "host_permissions": [
+    "https://www.blogger.com/",
+  ],
+  "optional_host_permissions": [
+    "*://*/*",
+  ]
 }
